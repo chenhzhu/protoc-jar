@@ -217,6 +217,9 @@ public class PlatformDetector
         if ("s390x".equals(value)) {
             return "s390_64";
         }
+        if ("riscv64".equals(osArch)) {
+            return "riscv64";
+        }
 
         return UNKNOWN;
     }
